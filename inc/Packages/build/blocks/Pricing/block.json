@@ -1,0 +1,289 @@
+{
+  "apiVersion": 3,
+  "title": "Pricing",
+  "name": "brandy/pricing",
+  "category": "brandy-blocks",
+  "description": "Display a three-column pricing table with a highlighted plan.",
+  "attributes": {
+    "number_card": {
+      "type": "number",
+      "default": 3
+    },
+    "card_title": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "color": "var(--body_text, #000729)",
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "constrain": false
+        },
+        "typography": {
+          "font_size": 26,
+          "bold": false,
+          "italic": false,
+          "text_transform": "uppercase",
+          "font_weight": 600
+        }
+      }
+    },
+    "card_pricing": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "price": {
+          "color": "var(--accent, #3858E9)",
+          "typography": {
+            "font_size": 36,
+            "bold": false,
+            "italic": false,
+            "text_transform": "none",
+            "font_weight": 600
+          }
+        },
+        "period": {
+          "color": "#3858E9",
+          "typography": {
+            "font_size": 14,
+            "bold": false,
+            "italic": false,
+            "text_transform": "none",
+            "font_weight": 600
+          },
+          "position": "sub"
+        },
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "constrain": false
+        }
+      }
+    },
+    "card_description": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "color": "var(--secondary_text, #5A6D80)",
+        "typography": {
+          "font_size": 16,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 400
+        },
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 15,
+          "constrain": false
+        }
+      }
+    },
+    "card_features": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "checked": {
+          "title_color": "var(--body_text, #000729)",
+          "icon_color": "var(--accent, #3858E9)",
+          "icon_background_color": "#EBF1F5",
+          "typography": {
+            "font_size": 18,
+            "bold": false,
+            "italic": false,
+            "text_transform": "none",
+            "font_weight": 400
+          }
+        },
+        "unchecked": {
+          "title_color": "#ABB8C3",
+          "icon_color": "#FFFFFF",
+          "icon_background_color": "#D1D9E0",
+          "typography": {
+            "font_size": 18,
+            "bold": false,
+            "italic": false,
+            "text_transform": "none",
+            "font_weight": 400
+          }
+        },
+        "margin": {
+          "top": 0,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "constrain": false
+        },
+        "item_spacing": 5
+      }
+    },
+    "card_button": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "type": "fill",
+        "color": {
+          "normal": "#ffffff",
+          "hover": "#ffffff"
+        },
+        "background_color": {
+          "normal": "var(--accent, #3858E9)",
+          "hover": "var(--accent, #3858E9)"
+        },
+        "width": 100,
+        "border_radius": {
+          "top": 7,
+          "left": 7,
+          "right": 7,
+          "bottom": 7,
+          "constrain": true
+        },
+        "margin": {
+          "top": 15,
+          "left": 0,
+          "right": 0,
+          "bottom": 0,
+          "constrain": false
+        },
+        "padding": {
+          "top": 12,
+          "left": 20,
+          "right": 20,
+          "bottom": 12,
+          "constrain": false
+        },
+        "typography": {
+          "font_size": 18,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 500
+        }
+      }
+    },
+    "card_settings": {
+      "type": "object",
+      "default": {
+        "horizontal_alignment": "left",
+        "background": {
+          "normal": "#ffffff",
+          "hover": "#ffffff"
+        },
+        "border_color": {
+          "normal": "#EBF1F5",
+          "hover": "var(--accent, #3858E9)"
+        },
+        "shadow": {
+          "type": "none",
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 0,
+          "color": "#ffffff"
+        },
+        "spacing": 30,
+        "padding": {
+          "top": 30,
+          "right": 30,
+          "bottom": 30,
+          "left": 30,
+          "constrain": true
+        }
+      }
+    },
+    "card_highlight_badge": {
+      "type": "object",
+      "default": {
+        "title_color": "#FFFFFF",
+        "background_color": "#FABD00",
+        "typography": {
+          "font_size": 12,
+          "bold": false,
+          "italic": false,
+          "text_transform": "uppercase",
+          "font_weight": 600
+        },
+        "margin": {
+          "top": 10,
+          "left": 0,
+          "right": 0,
+          "bottom": 10,
+          "constrain": false
+        },
+        "padding": {
+          "top": 5,
+          "left": 9,
+          "right": 9,
+          "bottom": 5,
+          "constrain": false
+        }
+      }
+    },
+    "highlight_settings": {
+      "type": "object",
+      "default": {
+        "selected": 2,
+        "card": {
+          "title_color": "var(--body_text, #000729)",
+          "pricing_price_color": "var(--accent, #3858E9)",
+          "pricing_period_color": "var(--accent, #3858E9)",
+          "description_color": "var(--secondary_text, #5A6D80)",
+          "checked_feature_icon_color": "var(--accent, #3858E9)",
+          "checked_feature_icon_background_color": "#EBF1F5",
+          "checked_feature_title_color": "#000729",
+          "unchecked_feature_icon_color": "#FFFFFF",
+          "unchecked_feature_icon_background_color": "#D1D9E0",
+          "unchecked_feature_title_color": "#ABB8C3",
+          "button_type": "fill",
+          "button_text_color": {
+            "normal": "#ffffff",
+            "hover": "#ffffff"
+          },
+          "button_background_color": {
+            "normal": "var(--accent, #3858E9)",
+            "hover": "var(--accent, #3858E9)"
+          },
+          "background_color": {
+            "normal": "#ffffff",
+            "hover": "#ffffff"
+          },
+          "border_color": {
+            "normal": "var(--accent, #3858E9)",
+            "hover": "var(--accent, #3858E9)"
+          }
+        }
+      }
+    },
+    "card_layout": {
+      "type": "array",
+      "default": [
+        "highlight_badge",
+        "title",
+        "pricing",
+        "description",
+        "list_features",
+        "button"
+      ]
+    }
+  },
+  "providesContext": {
+    "brandy/pricing/highlight_settings": "highlight_settings",
+    "brandy/pricing/card_layout": "card_layout",
+    "brandy/pricing/card_highlight_badge": "card_highlight_badge"
+  },
+  "example": {
+    "viewportWidth": 2000,
+    "attributes": {}
+  },
+  "icon": "money-alt",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-pricing"
+}

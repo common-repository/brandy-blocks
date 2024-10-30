@@ -1,0 +1,78 @@
+{
+  "apiVersion": 3,
+  "title": "Testimonial Card",
+  "name": "brandy/testimonial-card",
+  "category": "brandy-blocks",
+  "description": "Display add to wishlist button",
+  "attributes": {
+    "style": {
+      "shadow": "0 10px 50px 0 rgba(0, 0, 0, 0.05)",
+      "border": {
+        "radius": "12px",
+        "color": "#e7e8e9",
+        "width": "1px",
+        "style": "solid"
+      },
+      "spacing": {
+        "padding": {
+          "top": "3rem",
+          "bottom": "3rem",
+          "left": "3rem",
+          "right": "3rem"
+        }
+      }
+    }
+  },
+  "parent": [
+    "brandy/testimonials"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "shadow": true,
+    "color": {
+      "gradients": true,
+      "__experimentalDefaultControls": {
+        "background": true
+      }
+    },
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "layout": {
+      "allowSizingOnChildren": true
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 1400
+  },
+  "usesContext": [
+    "rootId"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

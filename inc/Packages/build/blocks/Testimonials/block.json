@@ -1,0 +1,106 @@
+{
+  "apiVersion": 3,
+  "title": "Testimonials",
+  "name": "brandy/testimonials",
+  "category": "brandy-blocks",
+  "description": "Display testimonials",
+  "attributes": {
+    "slidesPerView": {
+      "type": "number",
+      "default": 3
+    },
+    "testimonialsCount": {
+      "type": "number",
+      "default": 3
+    },
+    "navigation": {
+      "type": "object",
+      "default": {
+        "size": "50px",
+        "iconSize": "7px",
+        "iconColor": "#122940",
+        "iconHoverColor": "#808890",
+        "backgroundColor": "#FFFFFF",
+        "backgroundHoverColor": "#EFF2F4",
+        "shadow": "0 10px 25px 0 rgba(55,126,98,0.05)"
+      }
+    },
+    "itemsSpacing": {
+      "type": "string"
+    },
+    "pagination": {
+      "type": "object",
+      "default": {
+        "enabled": true,
+        "size": "12px",
+        "activeColor": "#122940",
+        "defaultColor": "#D3DCE5",
+        "spacing": "12px"
+      }
+    },
+    "scrollbar": {
+      "type": "object",
+      "default": {
+        "enabled": false,
+        "activeColor": "#122940",
+        "defaultColor": "#D3DCE5"
+      }
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "infiniteLoop": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoPlayDelay": {
+      "type": "number",
+      "default": 3000
+    }
+  },
+  "allowedBlocks": [
+    "brandy/testimonial-card"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 1400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-blocks/testimonials"
+}

@@ -1,0 +1,55 @@
+{
+  "apiVersion": 3,
+  "title": "Pricing card",
+  "name": "brandy/pricing-card",
+  "category": "brandy-blocks",
+  "attributes": {
+    "highlight_badge": {
+      "type": "string",
+      "default": "Most popular plan"
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "pricing": {
+      "type": "string",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "button": {
+      "type": "string",
+      "default": ""
+    },
+    "position": {
+      "type": "number",
+      "default": 1
+    },
+    "features": {
+      "type": "array",
+      "default": []
+    },
+    "icon_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "context": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "usesContext": [
+    "brandy/pricing/highlight_settings",
+    "brandy/pricing/card_layout",
+    "brandy/pricing/card_highlight_badge"
+  ],
+  "parent": [
+    "brandy/pricing"
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

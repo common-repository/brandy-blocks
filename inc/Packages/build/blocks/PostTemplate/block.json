@@ -1,0 +1,63 @@
+{
+  "apiVersion": 3,
+  "title": "Brandy Post Template",
+  "name": "brandy/post-template",
+  "category": "brandy-blocks",
+  "description": "",
+  "parent": [
+    "brandy/relative-posts"
+  ],
+  "usesContext": [
+    "query",
+    "queryId",
+    "displayLayout"
+  ],
+  "example": {
+    "viewportWidth": 1400,
+    "attributes": {}
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "layout": true,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,56 @@
+{
+  "apiVersion": 3,
+  "title": "Products With Banners",
+  "name": "brandy/products-with-banners",
+  "category": "brandy-blocks",
+  "description": "",
+  "attributes": {
+    "banner_settings": {
+      "type": "object",
+      "default": {
+        "primary": {
+          "mediaID": null,
+          "imageURL": "https://thien.ninjateam.org/wp-content/uploads/2024/01/fashion-banner-img.png",
+          "title": "Our top stars",
+          "subTitle": "Discover and shop our most popular plants, pots and accessories",
+          "buttonText": "Shop Now"
+        },
+        "secondary": {
+          "mediaID": null,
+          "imageURL": "https://thien.ninjateam.org/wp-content/uploads/2024/01/fashion-banner-img.png",
+          "title": "Love Your Space",
+          "subTitle": "Get 25% off everything",
+          "buttonText": "Shop Now"
+        }
+      }
+    },
+    "content_settings": {
+      "type": "object",
+      "default": {
+        "showImage": true,
+        "showCategory": true,
+        "showTitle": true,
+        "showRating": true,
+        "showPrice": true,
+        "showAddToCart": true
+      }
+    },
+    "product_category_settings": {
+      "type": "object",
+      "default": {
+        "selectedCategories": [],
+        "searchTerm": ""
+      }
+    }
+  },
+  "providesContext": {},
+  "example": {
+    "viewportWidth": 2000,
+    "attributes": {}
+  },
+  "icon": "money-alt",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-blocks/products-with-banners"
+}

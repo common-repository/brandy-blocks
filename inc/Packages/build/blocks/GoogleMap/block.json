@@ -1,0 +1,65 @@
+{
+  "apiVersion": 3,
+  "title": "Google Map",
+  "name": "brandy/google-map",
+  "category": "brandy-blocks",
+  "description": "Display Google map",
+  "attributes": {
+    "currentAddress": {
+      "type": "string",
+      "default": ""
+    },
+    "zoomLevel": {
+      "type": "number",
+      "default": 12
+    },
+    "mapStyle": {
+      "type": "string",
+      "default": "roadmap"
+    },
+    "language": {
+      "type": "string",
+      "default": "en"
+    }
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 1400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-blocks/google-map"
+}

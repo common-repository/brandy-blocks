@@ -1,0 +1,88 @@
+/** Color */
+
+.wp-block-button:where([style*="--button-hover-color"])
+  .wp-element-button:hover,
+.wp-block-woocommerce-product-button:where(
+    [style*="--button-hover-color"]
+  ):hover
+  .wp-element-button {
+  color: var(--button-hover-color) !important;
+}
+
+.wp-block-button:where([style*="--button-hover-background-color"])
+  .wp-element-button:hover,
+.wp-block-woocommerce-product-button:where(
+    [style*="--button-hover-background-color"]
+  ):hover
+  .wp-element-button {
+  background-color: var(--button-hover-background-color) !important;
+}
+
+.wp-block-button:where([style*="--button-hover-border-w"])
+  .wp-element-button:hover {
+  border-width: var(--button-hover-border-w) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-c"])
+  .wp-element-button:hover {
+  border-color: var(--button-hover-border-c) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-s"])
+  .wp-element-button:hover {
+  border-style: var(--button-hover-border-s) !important;
+}
+
+/** Left */
+.wp-block-button:where([style*="--button-hover-border-left-w"])
+  .wp-element-button:hover {
+  border-left-width: var(--button-hover-border-left-w) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-left-c"])
+  .wp-element-button:hover {
+  border-left-color: var(--button-hover-border-left-c) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-left-s"])
+  .wp-element-button:hover {
+  border-left-style: var(--button-hover-border-left-s) !important;
+}
+
+/** Right */
+.wp-block-button:where([style*="--button-hover-border-right-w"])
+  .wp-element-button:hover {
+  border-right-width: var(--button-hover-border-right-w) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-right-c"])
+  .wp-element-button:hover {
+  border-right-color: var(--button-hover-border-right-c) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-right-s"])
+  .wp-element-button:hover {
+  border-right-style: var(--button-hover-border-right-s) !important;
+}
+
+/** Bottom */
+.wp-block-button:where([style*="--button-hover-border-bottom-w"])
+  .wp-element-button:hover {
+  border-bottom-width: var(--button-hover-border-bottom-w) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-bottom-c"])
+  .wp-element-button:hover {
+  border-bottom-color: var(--button-hover-border-bottom-c) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-bottom-s"])
+  .wp-element-button:hover {
+  border-bottom-style: var(--button-hover-border-bottom-s) !important;
+}
+
+/** Top */
+.wp-block-button:where([style*="--button-hover-border-top-w"])
+  .wp-element-button:hover {
+  border-top-width: var(--button-hover-border-top-w) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-top-c"])
+  .wp-element-button:hover {
+  border-top-color: var(--button-hover-border-top-c) !important;
+}
+.wp-block-button:where([style*="--button-hover-border-top-s"])
+  .wp-element-button:hover {
+  border-top-style: var(--button-hover-border-top-s) !important;
+}

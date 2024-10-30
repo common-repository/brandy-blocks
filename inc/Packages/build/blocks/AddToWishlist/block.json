@@ -1,0 +1,114 @@
+{
+  "apiVersion": 3,
+  "title": "Add To Wishlist",
+  "name": "brandy/add-to-wishlist",
+  "category": "brandy-blocks",
+  "description": "Display add to wishlist button",
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "https://images.wpbrandy.com/uploads/wishlist-icon-1.png"
+    },
+    "iconHover": {
+      "type": "string",
+      "default": "https://images.wpbrandy.com/uploads/wishlist-icon-1.png"
+    },
+    "iconActive": {
+      "type": "string",
+      "default": "https://images.wpbrandy.com/uploads/wishlisted-icon.png"
+    },
+    "iconSize": {
+      "type": "string",
+      "default": "20px"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff00"
+    },
+    "backgroundColorHover": {
+      "type": "string",
+      "default": "#ffffff00"
+    },
+    "backgroundColorActive": {
+      "type": "string",
+      "default": "#ffffff00"
+    },
+    "textColor": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorActive": {
+      "type": "string",
+      "default": ""
+    },
+    "loadingSpinnerColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "defaultText": {
+      "type": "string",
+      "default": "Add to wishlist"
+    },
+    "addedText": {
+      "type": "string",
+      "default": "Wishlisted"
+    }
+  },
+  "usesContext": [
+    "postType",
+    "postId"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 1400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

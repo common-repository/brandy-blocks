@@ -1,0 +1,91 @@
+{
+  "apiVersion": 3,
+  "title": "Form Phone",
+  "name": "brandy/form-phone",
+  "category": "brandy-blocks",
+  "description": "Display a form phone input",
+  "ancestor": [
+    "brandy/form"
+  ],
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "user_phone"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string",
+      "default": "Phone"
+    },
+    "id": {
+      "type": "string",
+      "default": "user-phone"
+    },
+    "autocomplete": {
+      "type": "boolean",
+      "default": true
+    },
+    "validate": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "border": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

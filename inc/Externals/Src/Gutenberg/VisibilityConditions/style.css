@@ -1,0 +1,109 @@
+/* Custom CSS for the visibility panel */
+.brandy-visibility-panel .components-panel-body__title {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.brandy-visibility-panel svg {
+  margin-right: 8px;
+}
+
+/* Additional styling for block controls */
+.brandy-visibility-panel .components-checkbox-control {
+  margin-bottom: 10px;
+}
+/* Style wrapper and labels */
+.brandy-visibility-controls-wrapper {
+  padding: 10px;
+  background-color: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.brandy-visibility-controls-label {
+  font-weight: bold;
+  padding-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Style for checkbox controls */
+.brandy-user-state-checkbox,
+.brandy-role-checkbox,
+.brandy-browser-checkbox,
+.brandy-day-checkbox {
+  margin-bottom: 8px;
+}
+
+.brandy-user-state-checkbox .components-checkbox-control__input,
+.brandy-role-checkbox .components-checkbox-control__input,
+.brandy-browser-checkbox .components-checkbox-control__input,
+.brandy-day-checkbox .components-checkbox-control__input {
+  background-color: #ffffff;
+  border: 1px solid #d2dae2;
+  border-radius: 4px;
+  padding: 4px;
+}
+.brandy-user-state-checkbox label,
+.brandy-role-checkbox label,
+.brandy-browser-checkbox label,
+.brandy-day-checkbox label {
+  font-size: 13px;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+/* Hover effect for checkboxes */
+.brandy-user-state-checkbox:hover,
+.brandy-role-checkbox:hover,
+.brandy-browser-checkbox:hover,
+.brandy-day-checkbox:hover {
+  background-color: #f1f5f9;
+}
+
+/* Checkboxes when active */
+.brandy-user-state-checkbox .components-checkbox-control__input:checked,
+.brandy-role-checkbox .components-checkbox-control__input:checked,
+.brandy-browser-checkbox .components-checkbox-control__input:checked,
+.brandy-day-checkbox .components-checkbox-control__input:checked {
+  background-color: #4299e1;
+  border-color: #4299e1;
+  color: #fff;
+}
+
+/* Editor Content Style */
+.editor-styles-wrapper .brandy-conditional-visibility-blocks,
+.brandy-conditional-visibility-blocks {
+  outline: 1px dashed var(--wp-admin-theme-color);
+}
+.editor-styles-wrapper
+  .brandy-conditional-visibility-blocks.brandy-hidden-block,
+.brandy-conditional-visibility-blocks.brandy-hidden-block {
+  opacity: 0.4;
+}
+.editor-styles-wrapper .brandy-conditional-visibility-blocks::before,
+.brandy-conditional-visibility-blocks::before {
+  content: "Brandy Conditional";
+  z-index: 10;
+  font-size: 8px;
+  color: white;
+  background: var(--wp-admin-theme-color);
+  padding: 0px 4px;
+  display: block;
+  line-height: normal;
+  position: absolute;
+  top: -10px;
+  right: 1px;
+}
+
+/** Integrate with Responsive condition */
+.editor-styles-wrapper
+  .brandy-conditional-visibility-blocks[data-hide-ons]::before,
+.brandy-conditional-visibility-blocks[data-hide-ons]::before {
+  content: "Brandy Conditional, Hide on " attr(data-hide-ons) !important;
+}

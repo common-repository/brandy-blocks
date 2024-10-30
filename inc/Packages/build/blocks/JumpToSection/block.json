@@ -1,0 +1,97 @@
+{
+  "apiVersion": 3,
+  "title": "Jump To Section",
+  "name": "brandy/jump-to-section",
+  "category": "brandy-blocks",
+  "description": "Emphasizing the action of jumping directly to a section.",
+  "attributes": {
+    "jumpType": {
+      "type": "string",
+      "default": "top"
+    },
+    "sectionSelector": {
+      "type": "string",
+      "default": "#"
+    },
+    "scrollBehaviour": {
+      "type": "string",
+      "default": "smooth"
+    },
+    "scrollDuration": {
+      "type": "number",
+      "default": 1000
+    },
+    "display": {
+      "type": "string",
+      "default": "fixed"
+    },
+    "position": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "50px",
+        "right": "",
+        "bottom": "50px"
+      }
+    },
+    "layout": {
+      "type": "object",
+      "default": {
+        "type": "constrained",
+        "contentSize": "48px",
+        "wideSize": "48px",
+        "justifyContent": "left"
+      }
+    }
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "layout": {
+      "allowSizingOnChildren": true
+    },
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "shadow": true,
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 400,
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-blocks/jump-to-section"
+}

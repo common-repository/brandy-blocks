@@ -1,0 +1,153 @@
+{
+  "apiVersion": 3,
+  "title": "CountDown",
+  "name": "brandy/countdown",
+  "category": "brandy-blocks",
+  "description": "Displays a customizable timer counting down",
+  "attributes": {
+    "countdownDate": {
+      "type": "string",
+      "default": ""
+    },
+    "overallDirection": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "itemDirection": {
+      "type": "string",
+      "default": "vertical"
+    },
+    "overallAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "itemAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "overall": {
+      "type": "object",
+      "default": {
+        "direction": "horizontal",
+        "align": "center",
+        "spacing": 20
+      }
+    },
+    "item": {
+      "type": "object",
+      "default": {
+        "direction": "vertical",
+        "align": "center",
+        "spacing": 0
+      }
+    },
+    "prefix": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "typography": {
+          "font_size": 15,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 500
+        }
+      }
+    },
+    "main": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "backgroundColor": "#F0F5FA",
+        "typography": {
+          "font_size": 45,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 500
+        }
+      }
+    },
+    "suffix": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "typography": {
+          "font_size": 15,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 500
+        }
+      }
+    },
+    "dayOptions": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "prefix": "",
+        "suffix": "Days"
+      }
+    },
+    "hourOptions": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "prefix": "",
+        "suffix": "Hours"
+      }
+    },
+    "minuteOptions": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "prefix": "",
+        "suffix": "Minutes"
+      }
+    },
+    "secondOptions": {
+      "type": "object",
+      "default": {
+        "visible": true,
+        "prefix": "",
+        "suffix": "Seconds"
+      }
+    },
+    "separator": {
+      "type": "object",
+      "default": {
+        "text": ":",
+        "color": "",
+        "typography": {
+          "font_size": 29,
+          "bold": false,
+          "italic": false,
+          "text_transform": "none",
+          "font_weight": 500
+        }
+      }
+    }
+  },
+  "providesContext": {},
+  "supports": {
+    "color": {
+      "gradients": true,
+      "__experimentalDefaultControls": {
+        "background": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "example": {
+    "viewportWidth": 2000,
+    "attributes": {}
+  },
+  "icon": "clock",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "brandy-blocks/countdown"
+}

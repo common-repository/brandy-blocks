@@ -1,0 +1,1 @@
+[data-hide-ons]{outline:1px dashed var(--wp-admin-theme-color);position:relative}[data-hide-ons]:before{background:var(--wp-admin-theme-color);color:#fff;content:"Hide on " attr(data-hide-ons);display:block;font-size:8px;line-height:normal;padding:0 4px;position:absolute;right:1px;top:-10px;z-index:10}

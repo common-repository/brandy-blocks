@@ -1,0 +1,16 @@
+.wp-block-woocommerce-product-price:where([style*="--original-price-color"])
+  del {
+  color: var(--original-price-color, inherit) !important;
+}
+.wp-block-woocommerce-product-price:where([style*="--original-price-size"])
+  del {
+  font-size: var(--original-price-size, inherit) !important;
+}
+.wp-block-woocommerce-product-price:where([style*="--original-price-weight"])
+  del {
+  font-weight: var(--original-price-weight, inherit) !important;
+}
+.wp-block-woocommerce-product-price:where([style*="--original-price-style"])
+  del {
+  font-style: var(--original-price-style, inherit) !important;
+}

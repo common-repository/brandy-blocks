@@ -1,0 +1,91 @@
+{
+  "apiVersion": 3,
+  "title": "Testimonial Rating",
+  "name": "brandy/testimonial-rating",
+  "category": "brandy-blocks",
+  "ancestor": [
+    "brandy/testimonial-card"
+  ],
+  "description": "Display testimonial rating",
+  "attributes": {
+    "ratingPoint": {
+      "type": "number",
+      "default": 5
+    },
+    "size": {
+      "type": "string",
+      "default": "16px"
+    },
+    "activeColor": {
+      "type": "string",
+      "default": "#f8b84e"
+    },
+    "defaultColor": {
+      "type": "string",
+      "default": "#bebfc2"
+    },
+    "spacing": {
+      "type": "string",
+      "default": "5px"
+    }
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "border": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "usesContext": [
+    "singleTestimonialId",
+    "rootId"
+  ],
+  "example": {
+    "viewportWidth": 1400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

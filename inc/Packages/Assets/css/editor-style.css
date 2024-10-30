@@ -1,0 +1,44 @@
+.brandy-editor .components-base-control {
+  margin-bottom: 0;
+}
+
+.brandy-editor {
+  background: #f7f7f9;
+  border-top: 1px solid #ddd;
+}
+
+.brandy-editor .setting-wrapper {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brandy-editor .setting-wrapper:last-child {
+  border-bottom: none;
+}
+
+.brandy-editor .components-base-control__label {
+  font-size: 12px;
+  color: #5a6d80;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.brandy-editor .components-base-control__label.setting__sub-label {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.brandy-editor-group-color {
+  display: flex;
+  gap: 5px;
+}
+
+.brandy-editor-group-color > div {
+  width: 48%;
+}
+.brandy-editor-group-color .color-picker {
+  width: 100%;
+}

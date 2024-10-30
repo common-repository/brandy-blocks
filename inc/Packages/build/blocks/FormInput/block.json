@@ -1,0 +1,95 @@
+{
+  "apiVersion": 3,
+  "title": "Form Input",
+  "name": "brandy/form-input",
+  "category": "brandy-blocks",
+  "description": "Display a form input",
+  "ancestor": [
+    "brandy/form"
+  ],
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "username"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    },
+    "label": {
+      "type": "string",
+      "default": "Username"
+    },
+    "id": {
+      "type": "string",
+      "default": "username"
+    },
+    "autocomplete": {
+      "type": "boolean",
+      "default": true
+    },
+    "type": {
+      "type": "string",
+      "default": "text"
+    },
+    "line": {
+      "type": "number",
+      "default": 5
+    }
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "border": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    }
+  },
+  "example": {
+    "viewportWidth": 400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

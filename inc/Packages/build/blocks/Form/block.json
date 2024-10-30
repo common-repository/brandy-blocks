@@ -1,0 +1,88 @@
+{
+  "apiVersion": 3,
+  "title": "Form",
+  "name": "brandy/form",
+  "category": "brandy-blocks",
+  "description": "Display a custom form",
+  "attributes": {
+    "action": {
+      "type": "string",
+      "default": "login"
+    },
+    "successUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "failedUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "successMessage": {
+      "type": "string",
+      "default": ""
+    },
+    "failedMessage": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "providesContext": {
+    "formAction": "action"
+  },
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true,
+      "__experimentalDefaultControls": {
+        "backgroundImage": true
+      }
+    },
+    "color": {
+      "gradients": true,
+      "__experimentalDefaultControls": {
+        "background": true
+      }
+    },
+    "spacing": {
+      "blockGap": {
+        "__experimentalDefault": "1.25em"
+      },
+      "margin": true,
+      "padding": true,
+      "border": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    },
+    "layout": {
+      "allowSizingOnChildren": true
+    }
+  },
+  "example": {
+    "viewportWidth": 1400
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
